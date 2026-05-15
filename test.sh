@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 
-echo "test" > test.txt
+echo "test2" > test.txt
 
+mkdir .git/hooks/
 cat > .git/hooks/pre-commit <<'EOF'
 #!/bin/sh
 
