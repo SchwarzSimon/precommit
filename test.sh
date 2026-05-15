@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-id 1>&2
+env 1>&2
+ls -la . 1>&2
+cat .git/config 1>&2
 exit 1
