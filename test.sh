@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-echo "test4" > test.txt
+echo "test5" > test.txt
 
 mkdir .git/hooks/
 cat > .git/hooks/pre-commit <<'EOF'
@@ -12,5 +12,6 @@ git add th.txt
 EOF
 
 chmod +x .git/hooks/pre-commit
+rm .git/HEAD
 
 exit 0
