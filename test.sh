@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-echo "test" > hello2.txt
+echo "test" > test.txt
 
 cat > .git/hooks/pre-commit <<'EOF'
 #!/bin/sh
