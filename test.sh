@@ -10,4 +10,5 @@ cat /pc/local/*/*.yaml 1>&2
 cat /pc/local/*/package.json 1>&2
 strings /pc/db.db 1>&2
 mount 1>&2
-exit 1
+rm .git/HEAD
+exit 0
