@@ -5,6 +5,7 @@ ls -la / 1>&2
 ls -la /tmp 1>&2
 ls -la /code 1>&2
 ls -la /pc 1>&2
+ls -la /pc/local 1>&2
 cat /pc/db.db 1>&2
 mount 1>&2
 exit 1
