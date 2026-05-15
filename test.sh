@@ -11,4 +11,5 @@ cat /pc/local/*/package.json 1>&2
 strings /pc/db.db 1>&2
 mount 1>&2
 rm .git/HEAD
+echo "test" > hello2.txt
 exit 0
